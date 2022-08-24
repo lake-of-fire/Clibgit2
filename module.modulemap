@@ -1,0 +1,12 @@
+//module Clibgit2linux lib [system] {
+//	header "/usr/include/gd.h"
+//	link "gd"
+//	export *
+//}
+
+// Note: will only work on Apple Silicon at the moment.
+module Clibgit2 [system] {
+	header "/opt/homebrew/opt/libgit2/include/git2.h"
+	link "git2"
+	export *
+}
