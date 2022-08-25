@@ -9,5 +9,11 @@ let package = Package(
 	providers: [
 		.brew(["libgit2"]),
 		.apt(["libgit2"])
+	],
+	products: [
+		.library(name: "Clibgit2", targets: ["Clibgit2"])
+	],
+	targets: [
+		.systemLibrary(name: "Clibgit2", path: ".")
 	]
 )
